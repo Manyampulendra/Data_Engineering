@@ -14,7 +14,7 @@ The Databricks dashboard is organized into three pages:
 | Payment & Data Quality | Monitor payment patterns and data reliability | Payment-method trends, pending amount, missing/invalid data, clean and rejected rows |
 
 # Architecture
-[<img width="1058" height="596" alt="image" ](src="https://github.com/user-attachments/assets/44e2b7c8-35f5-4a5c-8377-a220021cd9c8" />)
+<img width="1058" height="596" alt="image" src="https://github.com/user-attachments/assets/44e2b7c8-35f5-4a5c-8377-a220021cd9c8" />
 
 # Data flow
 1. Bronze layer – ingestion
