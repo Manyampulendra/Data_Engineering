@@ -17,18 +17,18 @@ The Databricks dashboard is organized into three pages:
 <img width="1058" height="596" alt="image" src="https://github.com/user-attachments/assets/44e2b7c8-35f5-4a5c-8377-a220021cd9c8" />
 
 # Data flow
-1. Bronze layer – ingestion
+### 1. Bronze layer – ingestion
    - Reads CSV files from the Databricks Unity Catalog Volume.
    - Creates the bronze_ride_trips streaming table.
    - Captures source filename and ingestion timestamp metadata.
-2. Silver layer – cleaning and validation
+### 2. Silver layer – cleaning and validation
    - Creates silver_trips_clean for accepted, standardized records.
    - Creates silver_trips_rejected for records failing key validation rules.
    - Applies rules including positive trip distance and non-negative rate per kilometre.
    - Normalizes selected text fields and handles missing values according to the transformation SQL.
-3. Gold layer – business aggregation
+### 3. Gold layer – business aggregation
    - Creates summary datasets for monthly performance, cities, vehicle types, payment methods, and data quality.
-4. Analytics dashboard
+### 4. Analytics dashboard
    - Uses the Gold datasets to support business and operational analysis.
      
 # Technology Stack
